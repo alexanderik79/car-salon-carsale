@@ -139,10 +139,10 @@ img {
   display: flex;
   align-items: flex-end;
   color: #fff;
-/* Додали слово fixed після center/cover */
-background: linear-gradient(180deg, rgba(12, 18, 32, 0.25), rgba(12, 18, 32, 0.88)), 
-              url(https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80) center/cover fixed, 
-              #16203a;
+  background: linear-gradient(180deg, rgba(12, 18, 32, 0.25), rgba(12, 18, 32, 0.88)), 
+                url(https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80) center/cover, 
+                #16203a;
+
 }
 
 .hero-in {
@@ -565,6 +565,10 @@ footer .wrap { padding: 24px 20px; font-size: 14px; }
     text-align: center;
     padding: 12px;
     font-size: 18px;
+  }
+
+  .hero {
+    background-attachment: fixed;
   }
   
   .burger.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
